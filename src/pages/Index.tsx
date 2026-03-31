@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { TypingText } from "@/components/TypingText";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Redacted } from "@/components/Redacted";
 import { LiveTerminal } from "@/components/LiveTerminal";
 import { MatrixRain } from "@/components/MatrixRain";
 import { GlowCard } from "@/components/GlowCard";
