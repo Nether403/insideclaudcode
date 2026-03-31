@@ -165,7 +165,7 @@ export default function Index() {
           transition={{ delay: 1.8, duration: 1 }}
           className="z-10 mt-6 max-w-2xl text-center text-sm sm:text-base text-muted-foreground font-mono leading-relaxed"
         >
-          Everything hidden beneath the surface — unreleased features, secret commands,
+          Everything hidden beneath the surface — <Redacted label="DECLASSIFY">unreleased features, secret commands</Redacted>,
           and the architecture that powers the most capable AI coding assistant.
         </motion.p>
 
