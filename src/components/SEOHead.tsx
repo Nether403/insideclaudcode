@@ -8,7 +8,7 @@ interface SEOHeadProps {
 }
 
 const BASE_URL = "https://ccleaks.com";
-const SITE_NAME = "CC_LEAK — Claude Code Source Leak Analysis";
+const SITE_NAME = "Inside Claude Code — The Unauthorized Field Guide";
 
 export function SEOHead({ title, description, path = "/", type = "article" }: SEOHeadProps) {
   const fullTitle = path === "/" ? SITE_NAME : `${title} | CC_LEAK`;
