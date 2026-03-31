@@ -305,22 +305,24 @@ export default function Index() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Link
-                to={r.url}
-                className="group block p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 hover:bg-card transition-all duration-300 h-full"
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <r.icon className="h-6 w-6 text-primary" />
-                  <span className="text-[9px] font-mono text-accent tracking-widest">{r.tag}</span>
-                </div>
-                <h3 className="font-heading font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                  {r.title}
-                </h3>
-                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{r.desc}</p>
-                <div className="mt-4 flex items-center text-xs text-primary/70 font-mono group-hover:text-primary transition-colors">
-                  Read analysis <ChevronRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
+              <GlowCard className="rounded-lg border border-border/50 bg-card/50 h-full">
+                <Link
+                  to={r.url}
+                  className="group block p-6 h-full"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <r.icon className="h-6 w-6 text-primary" />
+                    <span className="text-[9px] font-mono text-accent tracking-widest">{r.tag}</span>
+                  </div>
+                  <h3 className="font-heading font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                    {r.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{r.desc}</p>
+                  <div className="mt-4 flex items-center text-xs text-primary/70 font-mono group-hover:text-primary transition-colors">
+                    Read analysis <ChevronRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              </GlowCard>
             </motion.div>
           ))}
 
