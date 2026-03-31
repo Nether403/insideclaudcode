@@ -75,6 +75,12 @@ export default function Index() {
       <div className="fixed inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
       <div className="fixed inset-0 bg-scanline pointer-events-none" />
 
+      {/* Matrix rain hero background */}
+      <div className="absolute inset-0 h-[70vh] overflow-hidden pointer-events-none">
+        <MatrixRain />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
+      </div>
+
       {/* Grand Title Section */}
       <section className="relative min-h-[70vh] flex flex-col items-center justify-center px-4 pt-20 pb-8 overflow-hidden">
         {/* Animated background rings */}
