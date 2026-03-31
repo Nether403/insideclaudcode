@@ -66,49 +66,141 @@ export const MODEL_REGISTRY = {
 export default function Index() {
   return (
     <PageTransition>
-      <SEOHead title="CC_LEAK — Claude Code Source Leak Analysis" description="Interactive analysis of the 512,000-line Claude Code source leak. Explore unreleased models, hidden features, architecture, and security." path="/" type="website" />
+       <SEOHead title="Inside Claude Code — The Unauthorized Field Guide" description="Everything hidden beneath the surface — unreleased features, secret commands, and the architecture that powers the most capable AI coding assistant." path="/" type="website" />
       <div className="relative">
       {/* Grid background */}
       <div className="fixed inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
       <div className="fixed inset-0 bg-scanline pointer-events-none" />
 
-      {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-4 py-20">
+      {/* Grand Title Section */}
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center px-4 pt-20 pb-8 overflow-hidden">
+        {/* Animated background rings */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          {[1, 2, 3].map((i) => (
+            <motion.div
+              key={i}
+              className="absolute rounded-full border border-primary/10"
+              style={{ width: `${i * 300}px`, height: `${i * 300}px` }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: [0, 0.3, 0], scale: [0.8, 1.1, 0.8] }}
+              transition={{ duration: 4 + i, repeat: Infinity, delay: i * 0.5 }}
+            />
+          ))}
+        </div>
+
         {/* Classified badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="classified-stamp mb-8"
+          className="classified-stamp mb-6 z-10"
         >
-          DECLASSIFIED // MARCH 2026
+          MARCH 31, 2026 // DECLASSIFIED
         </motion.div>
 
-        {/* Main headline */}
+        {/* Main Title — Inside Claude Code */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-center leading-tight max-w-5xl"
+          transition={{ delay: 0.4, duration: 1, type: "spring", stiffness: 50 }}
+          className="relative z-10 text-center"
         >
-          <span className="text-foreground">512,000 Lines.</span>{" "}
-          <span className="text-foreground">2,000+ Files.</span>
-          <br />
-          <span className="text-primary text-glow-cyan">The Accidental Unmasking.</span>
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-heading font-bold tracking-tight leading-none">
+            <motion.span
+              className="inline-block text-foreground"
+              initial={{ x: -30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+            >
+              Inside
+            </motion.span>{" "}
+            <motion.span
+              className="inline-block relative"
+              initial={{ x: 30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+            >
+              <span className="text-primary text-glow-cyan">Claude Code</span>
+              {/* Glitch overlay */}
+              <motion.span
+                className="absolute inset-0 text-glow-amber text-accent opacity-0 pointer-events-none"
+                aria-hidden="true"
+                animate={{
+                  opacity: [0, 0.8, 0, 0, 0.6, 0],
+                  x: [0, -3, 2, 0, -1, 0],
+                  y: [0, 1, -1, 0, 2, 0],
+                }}
+                transition={{ duration: 0.3, repeat: Infinity, repeatDelay: 5 }}
+              >
+                Claude Code
+              </motion.span>
+            </motion.span>
+          </span>
         </motion.h1>
 
-        {/* Subtitle with typing effect */}
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+          className="z-10 mt-4 text-lg sm:text-xl md:text-2xl font-heading text-muted-foreground/70 tracking-widest uppercase text-center"
+        >
+          The Unauthorized Field Guide
+        </motion.p>
+
+        {/* Tagline */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.8, duration: 1 }}
+          className="z-10 mt-6 max-w-2xl text-center text-sm sm:text-base text-muted-foreground font-mono leading-relaxed"
+        >
+          Everything hidden beneath the surface — unreleased features, secret commands,
+          and the architecture that powers the most capable AI coding assistant.
+        </motion.p>
+
+        {/* Divider line */}
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 2.2, duration: 0.8 }}
+          className="z-10 mt-8 h-px w-48 bg-gradient-to-r from-transparent via-primary/50 to-transparent"
+        />
+      </section>
+
+      {/* Dashboard Stats Section (existing) */}
+      <section className="relative flex flex-col items-center px-4 py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="mt-6 text-center"
+          transition={{ delay: 2.4 }}
+          className="classified-stamp mb-6"
         >
-          <p className="text-muted-foreground text-lg max-w-2xl font-mono">
+          THE NUMBERS
+        </motion.div>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 2.5, duration: 0.6 }}
+          className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-center mb-3"
+        >
+          <span className="text-foreground">512,000 Lines.</span>{" "}
+          <span className="text-foreground">2,000+ Files.</span>{" "}
+          <span className="text-primary text-glow-cyan">One Mistake.</span>
+        </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2.8 }}
+          className="text-center mb-8"
+        >
+          <p className="text-muted-foreground text-sm max-w-xl font-mono">
             <TypingText
-              text="When Anthropic accidentally published Claude Code's full source to npm, the AI industry's best-kept secrets were exposed..."
-              speed={30}
-              delay={1500}
+              text="Anthropic pushed unobfuscated source to npm. The AI industry's best-kept secrets went public in seconds..."
+              speed={25}
+              delay={3000}
             />
           </p>
         </motion.div>

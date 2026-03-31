@@ -116,8 +116,8 @@ export function AppSidebar() {
                 <Terminal className="h-4 w-4 text-primary" />
               </div>
               <div>
-                <span className="font-heading font-bold text-sm text-foreground">CC_LEAK</span>
-                <span className="block text-[10px] text-muted-foreground font-mono">v1.0 // DECLASSIFIED</span>
+                <span className="font-heading font-bold text-sm text-foreground">Inside Claude Code</span>
+                <span className="block text-[10px] text-muted-foreground font-mono">The Unauthorized Field Guide</span>
               </div>
             </div>
           ) : (
