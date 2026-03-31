@@ -133,7 +133,7 @@ export const STEALTH_DIRECTIVES = {
       {/* How It Works */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-4">
+          <h2 id="how-it-works" className="text-2xl font-heading font-bold mb-4">
             <span className="text-primary text-glow-cyan">03.</span> How It Works
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
