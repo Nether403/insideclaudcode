@@ -39,7 +39,7 @@ export default function About() {
           </h2>
           <div className="p-6 rounded-lg border border-border/50 bg-card/50 space-y-4 text-sm text-muted-foreground leading-relaxed">
             <p>
-              In early 2025, Anthropic accidentally published the complete source code for <strong className="text-foreground">Claude Code</strong> — their AI coding assistant — as an unobfuscated npm package. The package contained over <strong className="text-foreground">512,000 lines of TypeScript</strong> across 2,000+ files.
+              On March 31, 2026 at approximately 2:00 AM, Anthropic accidentally published the complete source code for <strong className="text-foreground">Claude Code</strong> — their AI coding assistant — as an unobfuscated npm package. The package contained over <strong className="text-foreground">512,000 lines of TypeScript</strong> across 2,000+ files.
             </p>
             <p>
               Before the package was taken down, multiple researchers and developers archived the source code. This site presents a structured analysis of what was found — from unreleased model codenames to hidden features and internal security protocols.
