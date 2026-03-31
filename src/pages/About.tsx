@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { PageTransition } from "@/components/PageTransition";
 import { SEOHead } from "@/components/SEOHead";
-import { Info, FileText, Shield, ExternalLink, Users, Scale } from "lucide-react";
+import { Info, FileText, Shield, ExternalLink, Users, Scale, Mail, Linkedin, Github, Globe, Twitter } from "lucide-react";
 
 const sources = [
   { name: "Original npm package", desc: "The accidentally published @anthropic/claude-code package before takedown." },
