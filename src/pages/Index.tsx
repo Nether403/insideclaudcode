@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { TypingText } from "@/components/TypingText";
 import { CodeBlock } from "@/components/CodeBlock";
+import { LiveTerminal } from "@/components/LiveTerminal";
+import { MatrixRain } from "@/components/MatrixRain";
+import { GlowCard } from "@/components/GlowCard";
 import { Link } from "react-router-dom";
 import {
   FileCode, Layers, Wrench, Key, ArrowDown,
@@ -71,6 +74,12 @@ export default function Index() {
       {/* Grid background */}
       <div className="fixed inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
       <div className="fixed inset-0 bg-scanline pointer-events-none" />
+
+      {/* Matrix rain hero background */}
+      <div className="absolute inset-0 h-[70vh] overflow-hidden pointer-events-none">
+        <MatrixRain />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
+      </div>
 
       {/* Grand Title Section */}
       <section className="relative min-h-[70vh] flex flex-col items-center justify-center px-4 pt-20 pb-8 overflow-hidden">
@@ -261,6 +270,13 @@ export default function Index() {
           <h2 className="text-2xl font-heading font-bold mt-2">What Was Found Inside</h2>
         </motion.div>
         <CodeBlock code={leakSnippet} title="models.ts" language="TypeScript" />
+
+        {/* Live Terminal */}
+        <div className="mt-10">
+          <span className="text-xs font-mono text-accent uppercase tracking-widest">// Live reconstruction</span>
+          <h3 className="text-xl font-heading font-bold mt-2 mb-4">How It Was Discovered</h3>
+          <LiveTerminal />
+        </div>
       </section>
 
       {/* Revelations Grid */}
@@ -289,22 +305,24 @@ export default function Index() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Link
-                to={r.url}
-                className="group block p-6 rounded-lg border border-border/50 bg-card/50 hover:border-primary/30 hover:bg-card transition-all duration-300 h-full"
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <r.icon className="h-6 w-6 text-primary" />
-                  <span className="text-[9px] font-mono text-accent tracking-widest">{r.tag}</span>
-                </div>
-                <h3 className="font-heading font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                  {r.title}
-                </h3>
-                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{r.desc}</p>
-                <div className="mt-4 flex items-center text-xs text-primary/70 font-mono group-hover:text-primary transition-colors">
-                  Read analysis <ChevronRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
+              <GlowCard className="rounded-lg border border-border/50 bg-card/50 h-full">
+                <Link
+                  to={r.url}
+                  className="group block p-6 h-full"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <r.icon className="h-6 w-6 text-primary" />
+                    <span className="text-[9px] font-mono text-accent tracking-widest">{r.tag}</span>
+                  </div>
+                  <h3 className="font-heading font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                    {r.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{r.desc}</p>
+                  <div className="mt-4 flex items-center text-xs text-primary/70 font-mono group-hover:text-primary transition-colors">
+                    Read analysis <ChevronRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              </GlowCard>
             </motion.div>
           ))}
 

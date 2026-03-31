@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Eye, AlertTriangle, ChevronRight, ExternalLink, Shield, MessageSquare } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Redacted } from "@/components/Redacted";
 import { Link } from "react-router-dom";
 import { PageTransition } from "@/components/PageTransition";
 import { SEOHead } from "@/components/SEOHead";
@@ -70,7 +71,7 @@ export default function Undercover() {
       {/* The Discovery */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-4">
+          <h2 id="discovery" className="text-2xl font-heading font-bold mb-4">
             <span className="text-primary text-glow-cyan">01.</span> The Discovery
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
@@ -103,7 +104,7 @@ export const STEALTH_DIRECTIVES = {
       {/* The 6 Directives */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-6">
+          <h2 id="directives" className="text-2xl font-heading font-bold mb-6">
             <span className="text-primary text-glow-cyan">02.</span> The Six Directives
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -132,7 +133,7 @@ export const STEALTH_DIRECTIVES = {
       {/* How It Works */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-4">
+          <h2 id="how-it-works" className="text-2xl font-heading font-bold mb-4">
             <span className="text-primary text-glow-cyan">03.</span> How It Works
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
@@ -168,7 +169,7 @@ export const STEALTH_DIRECTIVES = {
             <p className="text-sm text-muted-foreground">
               The <code className="text-primary font-mono text-xs px-1 py-0.5 bg-primary/10 rounded">isInternal</code> flag 
               bypasses the stealth directives entirely — meaning Anthropic's internal teams interact with a 
-              fundamentally different version of Claude than external users.
+              <Redacted>fundamentally different and more powerful</Redacted> version of Claude than external users.
             </p>
           </div>
         </motion.div>
@@ -177,7 +178,7 @@ export const STEALTH_DIRECTIVES = {
       {/* Ethical Implications */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-6">
+          <h2 id="ethics" className="text-2xl font-heading font-bold mb-6">
             <span className="text-primary text-glow-cyan">04.</span> Ethical Implications
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
