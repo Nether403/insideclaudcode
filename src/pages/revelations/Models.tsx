@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Database, ChevronRight, AlertTriangle, Search } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Redacted } from "@/components/Redacted";
 import { Link } from "react-router-dom";
 import { PageTransition } from "@/components/PageTransition";
 import { SEOHead } from "@/components/SEOHead";
