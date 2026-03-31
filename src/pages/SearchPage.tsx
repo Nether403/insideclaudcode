@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo } from "react";
 import { Search, FileText, Terminal, Shield, Cpu, Zap, Database, ArrowRight, Tag } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface SearchEntry {
   title: string;

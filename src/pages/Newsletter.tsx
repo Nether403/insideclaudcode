@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Mail, Send, CheckCircle, AlertCircle, Bell, FileText, Zap } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");

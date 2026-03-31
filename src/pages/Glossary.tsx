@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useMemo } from "react";
 import { BookOpen, Search, ChevronRight } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface GlossaryEntry {
   term: string;

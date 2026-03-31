@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Users, Github, ExternalLink, Star, GitFork, Code2, FileText, Terminal, MessageSquare } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface Project {
   name: string;
