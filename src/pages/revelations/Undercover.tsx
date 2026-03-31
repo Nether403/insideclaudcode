@@ -178,7 +178,7 @@ export const STEALTH_DIRECTIVES = {
       {/* Ethical Implications */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-6">
+          <h2 id="ethics" className="text-2xl font-heading font-bold mb-6">
             <span className="text-primary text-glow-cyan">04.</span> Ethical Implications
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
