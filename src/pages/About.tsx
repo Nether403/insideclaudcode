@@ -6,7 +6,7 @@ import { Info, FileText, Shield, ExternalLink, Users, Scale, Mail, Linkedin, Git
 const sources = [
   { name: "Original npm package", desc: "The accidentally published @anthropic/claude-code package before takedown." },
   { name: "Community archives", desc: "Multiple researchers independently archived the source before removal." },
-  { name: "CCLeaks.com", desc: "Primary reference for structured analysis and timeline reconstruction." },
+  
   { name: "Independent analyses", desc: "Cross-referenced with multiple security researchers' findings." },
 ];
 
