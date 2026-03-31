@@ -20,7 +20,7 @@ const revelations = [
   {
     icon: Eye,
     title: "Undercover Mode",
-    desc: "A hidden stealth protocol that conceals Claude's true capabilities from users and competitors.",
+    desc: "A hidden stealth protocol that conceals Claude's true capabilities from users and competitors. Codename: UNDERCOVER.",
     url: "/revelations/undercover",
     color: "text-glow-amber",
     tag: "CLASSIFIED",

@@ -201,7 +201,7 @@ export default function Security() {
           <p className="text-foreground leading-relaxed">
             Claude Code employs a <strong className="text-accent">4-layer security architecture</strong>: 
             the YOLO risk classifier evaluates every action, bash commands are AST-parsed before execution, 
-            Unicode attacks are detected and blocked, and system-level ptrace protections prevent runtime debugging and memory extraction.
+            Unicode attacks are detected and blocked, and <Redacted>system-level ptrace protections prevent runtime debugging and memory extraction</Redacted>.
           </p>
         </motion.div>
       </section>

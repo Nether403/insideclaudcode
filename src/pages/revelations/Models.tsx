@@ -49,7 +49,7 @@ const models = [
     statusColor: "text-terminal",
     family: "Claude 4.x",
     context: "1M+",
-    description: "Bleeding-edge development model with experimental million-token context. Earliest stage of any discovered model.",
+    description: "Bleeding-edge development model with experimental million-token context. Earliest stage of any discovered model. Internally referred to as 'the successor to everything.'",
     capabilities: ["Million-token context", "Persistent memory", "Multi-session learning", "Advanced planning"],
   },
   {

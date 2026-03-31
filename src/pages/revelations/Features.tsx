@@ -193,7 +193,7 @@ export default function Features() {
             <strong className="text-accent"> KAIROS</strong> (a "dreaming" knowledge consolidation system), 
             <strong className="text-accent"> Ultraplan</strong> (autonomous project management), and 
             <strong className="text-accent"> Coordinator</strong> (multi-agent orchestration). 
-            These suggest Anthropic is building far beyond a simple chatbot.
+            These suggest <Redacted>Anthropic is building far beyond a simple chatbot — toward a fully autonomous AI workforce</Redacted>.
           </p>
         </motion.div>
       </section>
