@@ -270,6 +270,13 @@ export default function Index() {
           <h2 className="text-2xl font-heading font-bold mt-2">What Was Found Inside</h2>
         </motion.div>
         <CodeBlock code={leakSnippet} title="models.ts" language="TypeScript" />
+
+        {/* Live Terminal */}
+        <div className="mt-10">
+          <span className="text-xs font-mono text-accent uppercase tracking-widest">// Live reconstruction</span>
+          <h3 className="text-xl font-heading font-bold mt-2 mb-4">How It Was Discovered</h3>
+          <LiveTerminal />
+        </div>
       </section>
 
       {/* Revelations Grid */}
