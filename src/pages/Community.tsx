@@ -40,7 +40,7 @@ const discussions = [
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const isInView = useInView(ref, { once: true });
 
   return (
