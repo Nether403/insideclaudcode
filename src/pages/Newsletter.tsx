@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Mail, Send, CheckCircle, AlertCircle, Bell, FileText, Zap } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
@@ -17,7 +19,9 @@ export default function Newsletter() {
   };
 
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <SEOHead title="Newsletter" description="Subscribe for encrypted updates on new Claude Code leak findings and analysis." path="/newsletter" />
+      <div className="min-h-screen">
       <div className="border-b border-border/50 bg-card/30">
         <div className="max-w-3xl mx-auto px-6 py-16 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -112,5 +116,6 @@ export default function Newsletter() {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

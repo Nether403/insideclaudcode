@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield, Search, ChevronRight, Filter, ArrowUpDown } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -84,7 +86,9 @@ export default function Registry() {
   );
 
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Codename Registry" description="Searchable database of all discovered Claude model codenames with status, capabilities, and confidence ratings." path="/registry" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -215,5 +219,6 @@ export default function Registry() {
         </Link>
       </section>
     </div>
+    </PageTransition>
   );
 }

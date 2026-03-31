@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Users, Github, ExternalLink, Star, GitFork, Code2, FileText, Terminal, MessageSquare } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface Project {
   name: string;
@@ -82,7 +84,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export default function Community() {
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <SEOHead title="Community" description="Community projects, analysis milestones, and the CLAUDE.md discovery from the Claude Code source leak." path="/community" />
+      <div className="min-h-screen">
       <div className="border-b border-border/50 bg-card/30">
         <div className="max-w-5xl mx-auto px-6 py-12">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -215,5 +219,6 @@ The API layer uses tRPC with Zod schemas.`}</code>
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

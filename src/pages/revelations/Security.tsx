@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Lock, ChevronRight, AlertTriangle, Shield, Bug, FileCode, Globe, Terminal } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const mechanisms = [
   {
@@ -159,7 +161,9 @@ export class PtraceGuard {
 
 export default function Security() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Security & Safety" description="YOLO classifier, Bash AST analysis, unicode smuggling prevention, and ptrace protection mechanisms." path="/revelations/security" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -262,5 +266,6 @@ export default function Security() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

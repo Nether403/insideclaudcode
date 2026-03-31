@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useMemo } from "react";
 import { Search, FileText, Terminal, Shield, Cpu, Zap, Database, ArrowRight, Tag } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface SearchEntry {
   title: string;
@@ -52,7 +54,9 @@ export default function SearchPage() {
   }, [query, selectedCategory]);
 
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <SEOHead title="Search" description="Search across all Claude Code leak findings — revelations, models, features, and technical analysis." path="/search" />
+      <div className="min-h-screen">
       <div className="border-b border-border/50 bg-card/30">
         <div className="max-w-4xl mx-auto px-6 py-12">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -153,5 +157,6 @@ export default function SearchPage() {
         )}
       </div>
     </div>
+    </PageTransition>
   );
 }

@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { GitBranch, Cpu, Terminal, Zap, Shield, Database, ArrowRight, ChevronDown, ChevronRight, Code2, Layers, Network, Play } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface ExplorerNode {
   id: string;
@@ -343,7 +345,9 @@ function FlowDiagram() {
 
 export default function Explorer() {
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <SEOHead title="Architecture Explorer" description="Interactive explorer of Claude Code's internal systems — boot sequence, query processing, security layer, and model orchestration." path="/explorer" />
+      <div className="min-h-screen">
       {/* Header */}
       <div className="border-b border-border/50 bg-card/30">
         <div className="max-w-5xl mx-auto px-6 py-12">
@@ -407,5 +411,6 @@ export default function Explorer() {
         </motion.div>
       </div>
     </div>
+    </PageTransition>
   );
 }

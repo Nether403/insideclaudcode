@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Zap, ChevronRight, AlertTriangle, Heart, Moon, ListChecks, Users, Sparkles } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const features = [
   {
@@ -149,7 +151,9 @@ export class CoordinatorOrchestrator {
 
 export default function Features() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Hidden Features" description="Unreleased features found in source: Buddy AI pet, KAIROS dreaming assistant, Ultraplan project manager, Coordinator." path="/revelations/features" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -256,5 +260,6 @@ export default function Features() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

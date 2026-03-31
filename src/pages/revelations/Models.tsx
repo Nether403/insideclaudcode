@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Database, ChevronRight, AlertTriangle, Search } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import {
@@ -81,7 +83,9 @@ export default function Models() {
   );
 
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Unreleased Models" description="Discovered model codenames — Fennec, Capybara, Tangu, Numbat — and their capabilities from the leaked registry." path="/revelations/models" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -238,5 +242,6 @@ export default function Models() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

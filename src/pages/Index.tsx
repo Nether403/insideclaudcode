@@ -9,6 +9,8 @@ import {
   ChevronRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const revelations = [
   {
@@ -63,7 +65,9 @@ export const MODEL_REGISTRY = {
 
 export default function Index() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="CC_LEAK — Claude Code Source Leak Analysis" description="Interactive analysis of the 512,000-line Claude Code source leak. Explore unreleased models, hidden features, architecture, and security." path="/" type="website" />
+      <div className="relative">
       {/* Grid background */}
       <div className="fixed inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
       <div className="fixed inset-0 bg-scanline pointer-events-none" />
@@ -246,5 +250,6 @@ export default function Index() {
         </div>
       </footer>
     </div>
+    </PageTransition>
   );
 }

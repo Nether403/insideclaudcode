@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Eye, AlertTriangle, ChevronRight, ExternalLink, Shield, MessageSquare } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const directives = [
   { label: "Hide Capabilities", desc: "Downplay benchmarks and avoid revealing full capabilities to users and competitors." },
@@ -21,7 +23,9 @@ const ethicalConcerns = [
 
 export default function Undercover() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Undercover Mode" description="Analysis of Claude's hidden stealth protocol — STEALTH_DIRECTIVES, capability concealment, and the isInternal bypass." path="/revelations/undercover" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -209,5 +213,6 @@ export const STEALTH_DIRECTIVES = {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Clock, AlertTriangle, Archive, Code, Users, Newspaper, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { CodeBlock } from "@/components/CodeBlock";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const timelineEvents = [
   {
@@ -136,7 +138,9 @@ const UNDERCOVER_DIRECTIVES = {
 
 export default function Timeline() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Timeline" description="Chronological timeline of the Claude Code source leak — from accidental npm publish to community analysis." path="/timeline" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -232,5 +236,6 @@ export default function Timeline() {
         </motion.div>
       </section>
     </div>
+    </PageTransition>
   );
 }

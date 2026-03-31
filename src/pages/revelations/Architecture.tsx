@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Cpu, ChevronRight, AlertTriangle, ArrowDown, Layers, Wrench, Brain, RefreshCw } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const bootSequence = [
   { step: "01", label: "Environment Detection", desc: "Detect runtime environment, load env variables (342 discovered), establish platform context." },
@@ -20,7 +22,9 @@ const queryLoopStages = [
 
 export default function Architecture() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Architecture Deep-Dive" description="Complete boot sequence, query processing loop, tool execution pipeline, and context management from Claude Code's internals." path="/revelations/architecture" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
@@ -298,5 +302,6 @@ export default function Architecture() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { BarChart3, FileCode2, Terminal, Shield, Cpu, Database, Layers, Zap } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
@@ -122,7 +124,9 @@ export default function Statistics() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <SEOHead title="Statistics Dashboard" description="Interactive charts and data visualizations of the 512K+ line Claude Code source leak — file distribution, model analysis, security metrics." path="/statistics" />
+      <div className="min-h-screen">
       {/* Header */}
       <div className="border-b border-border/50 bg-card/30">
         <div className="max-w-6xl mx-auto px-6 py-12">
@@ -347,5 +351,6 @@ export default function Statistics() {
         )}
       </div>
     </div>
+    </PageTransition>
   );
 }
