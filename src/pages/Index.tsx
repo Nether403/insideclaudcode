@@ -337,7 +337,7 @@ export default function Index() {
       {/* Footer */}
       <footer className="border-t border-border/30 px-4 py-8 mt-16">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground font-mono">
-          <span>CC_LEAK // INTERACTIVE INTELLIGENCE HUB</span>
+          <span>INSIDE CLAUDE CODE // THE UNAUTHORIZED FIELD GUIDE</span>
           <span>Built for research & educational purposes</span>
         </div>
       </footer>
