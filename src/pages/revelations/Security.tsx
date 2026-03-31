@@ -266,5 +266,6 @@ export default function Security() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

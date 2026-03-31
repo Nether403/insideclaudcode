@@ -219,5 +219,6 @@ export default function Registry() {
         </Link>
       </section>
     </div>
+    </PageTransition>
   );
 }

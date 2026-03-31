@@ -213,5 +213,6 @@ export const STEALTH_DIRECTIVES = {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

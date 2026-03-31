@@ -242,5 +242,6 @@ export default function Models() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

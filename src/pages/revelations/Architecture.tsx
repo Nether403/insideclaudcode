@@ -302,5 +302,6 @@ export default function Architecture() {
         </div>
       </section>
     </div>
+    </PageTransition>
   );
 }

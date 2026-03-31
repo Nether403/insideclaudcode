@@ -236,5 +236,6 @@ export default function Timeline() {
         </motion.div>
       </section>
     </div>
+    </PageTransition>
   );
 }

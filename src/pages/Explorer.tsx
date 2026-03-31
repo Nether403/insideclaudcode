@@ -411,5 +411,6 @@ export default function Explorer() {
         </motion.div>
       </div>
     </div>
+    </PageTransition>
   );
 }
