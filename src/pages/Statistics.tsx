@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { BarChart3, FileCode2, Terminal, Shield, Cpu, Database, Layers, Zap } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,

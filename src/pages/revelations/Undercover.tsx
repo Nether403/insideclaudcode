@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Eye, AlertTriangle, ChevronRight, ExternalLink, Shield, MessageSquare } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const directives = [
   { label: "Hide Capabilities", desc: "Downplay benchmarks and avoid revealing full capabilities to users and competitors." },

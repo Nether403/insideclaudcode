@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Zap, ChevronRight, AlertTriangle, Heart, Moon, ListChecks, Users, Sparkles } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const features = [
   {

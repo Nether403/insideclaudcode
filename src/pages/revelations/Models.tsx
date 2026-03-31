@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Database, ChevronRight, AlertTriangle, Search } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import {

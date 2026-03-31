@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { GitBranch, Cpu, Terminal, Zap, Shield, Database, ArrowRight, ChevronDown, ChevronRight, Code2, Layers, Network, Play } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 interface ExplorerNode {
   id: string;

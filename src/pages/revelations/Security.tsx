@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Lock, ChevronRight, AlertTriangle, Shield, Bug, FileCode, Globe, Terminal } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { Link } from "react-router-dom";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const mechanisms = [
   {

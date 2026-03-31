@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield, Search, ChevronRight, Filter, ArrowUpDown } from "lucide-react";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";

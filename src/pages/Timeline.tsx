@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Clock, AlertTriangle, Archive, Code, Users, Newspaper, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { CodeBlock } from "@/components/CodeBlock";
+import { PageTransition } from "@/components/PageTransition";
+import { SEOHead } from "@/components/SEOHead";
 
 const timelineEvents = [
   {
