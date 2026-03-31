@@ -169,7 +169,7 @@ export const STEALTH_DIRECTIVES = {
             <p className="text-sm text-muted-foreground">
               The <code className="text-primary font-mono text-xs px-1 py-0.5 bg-primary/10 rounded">isInternal</code> flag 
               bypasses the stealth directives entirely — meaning Anthropic's internal teams interact with a 
-              fundamentally different version of Claude than external users.
+              <Redacted>fundamentally different and more powerful</Redacted> version of Claude than external users.
             </p>
           </div>
         </motion.div>
