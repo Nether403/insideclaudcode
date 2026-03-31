@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Cpu, ChevronRight, AlertTriangle, ArrowDown, Layers, Wrench, Brain, RefreshCw } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Redacted } from "@/components/Redacted";
 import { Link } from "react-router-dom";
 import { PageTransition } from "@/components/PageTransition";
 import { SEOHead } from "@/components/SEOHead";
@@ -61,7 +62,7 @@ export default function Architecture() {
           <p className="text-foreground leading-relaxed">
             The leaked code reveals Claude Code's complete internal architecture: a <strong className="text-accent">5-stage boot sequence</strong>, 
             a sophisticated <strong className="text-accent">query processing loop</strong> with mid-generation tool execution, 
-            and a <strong className="text-accent">tool system with 87 registered tools</strong> — far more than publicly documented.
+            and a <strong className="text-accent">tool system with <Redacted>87 registered tools</Redacted></strong> — far more than publicly documented.
           </p>
         </motion.div>
       </section>

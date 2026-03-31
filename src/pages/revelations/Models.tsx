@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Database, ChevronRight, AlertTriangle, Search } from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Redacted } from "@/components/Redacted";
 import { Link } from "react-router-dom";
 import { PageTransition } from "@/components/PageTransition";
 import { SEOHead } from "@/components/SEOHead";
@@ -48,7 +49,7 @@ const models = [
     statusColor: "text-terminal",
     family: "Claude 4.x",
     context: "1M+",
-    description: "Bleeding-edge development model with experimental million-token context. Earliest stage of any discovered model.",
+    description: "Bleeding-edge development model with experimental million-token context. Earliest stage of any discovered model. Internally referred to as 'the successor to everything.'",
     capabilities: ["Million-token context", "Persistent memory", "Multi-session learning", "Advanced planning"],
   },
   {
@@ -122,7 +123,7 @@ export default function Models() {
           <p className="text-foreground leading-relaxed">
             The leaked configuration files contain references to <strong className="text-accent">at least 6 unreleased model codenames</strong> — 
             Fennec, Capybara, Tangu, Numbat, Quokka, and Dugong — with version numbers, status flags, and capability metadata 
-            that suggest a much more active internal development pipeline than publicly acknowledged.
+            that suggest <Redacted>a much more active internal development pipeline than publicly acknowledged</Redacted>.
           </p>
         </motion.div>
       </section>

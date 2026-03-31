@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { TypingText } from "@/components/TypingText";
 import { CodeBlock } from "@/components/CodeBlock";
+import { Redacted } from "@/components/Redacted";
 import { LiveTerminal } from "@/components/LiveTerminal";
 import { MatrixRain } from "@/components/MatrixRain";
 import { GlowCard } from "@/components/GlowCard";
@@ -19,7 +20,7 @@ const revelations = [
   {
     icon: Eye,
     title: "Undercover Mode",
-    desc: "A hidden stealth protocol that conceals Claude's true capabilities from users and competitors.",
+    desc: "A hidden stealth protocol that conceals Claude's true capabilities from users and competitors. Codename: UNDERCOVER.",
     url: "/revelations/undercover",
     color: "text-glow-amber",
     tag: "CLASSIFIED",
@@ -164,7 +165,7 @@ export default function Index() {
           transition={{ delay: 1.8, duration: 1 }}
           className="z-10 mt-6 max-w-2xl text-center text-sm sm:text-base text-muted-foreground font-mono leading-relaxed"
         >
-          Everything hidden beneath the surface — unreleased features, secret commands,
+          Everything hidden beneath the surface — <Redacted label="DECLASSIFY">unreleased features, secret commands</Redacted>,
           and the architecture that powers the most capable AI coding assistant.
         </motion.p>
 
