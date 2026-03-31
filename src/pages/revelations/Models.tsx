@@ -123,7 +123,7 @@ export default function Models() {
           <p className="text-foreground leading-relaxed">
             The leaked configuration files contain references to <strong className="text-accent">at least 6 unreleased model codenames</strong> — 
             Fennec, Capybara, Tangu, Numbat, Quokka, and Dugong — with version numbers, status flags, and capability metadata 
-            that suggest a much more active internal development pipeline than publicly acknowledged.
+            that suggest <Redacted>a much more active internal development pipeline than publicly acknowledged</Redacted>.
           </p>
         </motion.div>
       </section>
