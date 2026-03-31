@@ -7,8 +7,8 @@ import { SEOHead } from "@/components/SEOHead";
 
 const timelineEvents = [
   {
-    date: "June 2025",
-    time: "Day 0",
+    date: "March 31, 2026",
+    time: "~2:00 AM",
     title: "The Accidental Publish",
     description: "Anthropic pushes an update to their @anthropic-ai/claude-code npm package. Due to a CI/CD misconfiguration, the build step is skipped — shipping raw TypeScript source instead of compiled JavaScript.",
     icon: AlertTriangle,
@@ -29,8 +29,8 @@ const timelineEvents = [
 }`,
   },
   {
-    date: "June 2025",
-    time: "Day 0 — Hours Later",
+    date: "March 31, 2026",
+    time: "~4:00 AM",
     title: "Community Discovery",
     description: "Sharp-eyed developers notice the uncompiled source on npm. Word spreads rapidly through developer communities on Twitter/X, Reddit, and Hacker News.",
     icon: Users,
@@ -44,8 +44,8 @@ const timelineEvents = [
     ],
   },
   {
-    date: "June 2025",
-    time: "Day 0 — Hours Later",
+    date: "March 31, 2026",
+    time: "~5:00 AM",
     title: "The Archive Race",
     description: "Before Anthropic can unpublish the package, developers fork and archive the source code. Multiple mirrors appear on GitHub within hours.",
     icon: Archive,
@@ -64,8 +64,8 @@ $ find package/src -name "*.ts" | wc -l
 2,187  # total TypeScript files`,
   },
   {
-    date: "June 2025",
-    time: "Day 1",
+    date: "March 31, 2026",
+    time: "~8:00 AM",
     title: "Anthropic Responds",
     description: "Anthropic unpublishes the affected package version and releases a corrected build. An internal investigation begins into how the raw source was shipped.",
     icon: AlertTriangle,
@@ -79,8 +79,8 @@ $ find package/src -name "*.ts" | wc -l
     ],
   },
   {
-    date: "June 2025",
-    time: "Days 2–7",
+    date: "March 31, 2026",
+    time: "~10:00 AM — Afternoon",
     title: "Deep Analysis Begins",
     description: "Security researchers, AI enthusiasts, and journalists begin systematic analysis of the leaked code. Major findings start emerging about internal models, hidden features, and architecture.",
     icon: Code,
@@ -103,8 +103,8 @@ const UNDERCOVER_DIRECTIVES = {
 };`,
   },
   {
-    date: "June–July 2025",
-    time: "Weeks 2–4",
+    date: "March 31, 2026",
+    time: "~4:00 PM — Evening",
     title: "Community Projects Emerge",
     description: "The open-source community creates analysis tools, documentation, and even alternative implementations based on the discovered architecture.",
     icon: Users,
@@ -119,19 +119,18 @@ const UNDERCOVER_DIRECTIVES = {
     ],
   },
   {
-    date: "July 2025",
-    time: "Ongoing",
-    title: "Media Coverage & Industry Impact",
-    description: "Tech media publishes in-depth analyses. The leak sparks broader conversations about AI transparency, competitive practices, and the gap between public-facing AI and internal capabilities.",
+    date: "March 31, 2026",
+    time: "~8:00 PM",
+    title: "This Site Goes Live",
+    description: "CC_LEAK launches as a comprehensive, interactive analysis hub — documenting every revelation from the leaked source in one structured resource.",
     icon: Newspaper,
     color: "text-glow-amber",
     borderColor: "border-accent",
     details: [
-      "Multiple detailed technical analyses published",
-      "Discussions about AI transparency and 'undercover' practices",
-      "Industry debate on competitive AI strategies",
-      "Questions raised about informed consent and model capabilities",
-      "Regulatory interest in undisclosed AI capabilities",
+      "15+ pages of structured analysis and interactive data",
+      "Architecture explorer, model registry, and statistics dashboard",
+      "Community ecosystem documentation and glossary",
+      "Ongoing updates as new findings emerge",
     ],
   },
 ];

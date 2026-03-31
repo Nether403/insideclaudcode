@@ -81,7 +81,7 @@ export default function Index() {
           transition={{ delay: 0.2 }}
           className="classified-stamp mb-8"
         >
-          DECLASSIFIED // 2025
+          DECLASSIFIED // MARCH 2026
         </motion.div>
 
         {/* Main headline */}
