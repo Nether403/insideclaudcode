@@ -138,7 +138,9 @@ const UNDERCOVER_DIRECTIVES = {
 
 export default function Timeline() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Timeline" description="Chronological timeline of the Claude Code source leak — from accidental npm publish to community analysis." path="/timeline" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}

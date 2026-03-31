@@ -23,7 +23,9 @@ const ethicalConcerns = [
 
 export default function Undercover() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Undercover Mode" description="Analysis of Claude's hidden stealth protocol — STEALTH_DIRECTIVES, capability concealment, and the isInternal bypass." path="/revelations/undercover" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}

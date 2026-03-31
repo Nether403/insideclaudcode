@@ -151,7 +151,9 @@ export class CoordinatorOrchestrator {
 
 export default function Features() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Hidden Features" description="Unreleased features found in source: Buddy AI pet, KAIROS dreaming assistant, Ultraplan project manager, Coordinator." path="/revelations/features" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}

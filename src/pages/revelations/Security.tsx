@@ -161,7 +161,9 @@ export class PtraceGuard {
 
 export default function Security() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Security & Safety" description="YOLO classifier, Bash AST analysis, unicode smuggling prevention, and ptrace protection mechanisms." path="/revelations/security" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}

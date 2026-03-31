@@ -83,7 +83,9 @@ export default function Models() {
   );
 
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Unreleased Models" description="Discovered model codenames — Fennec, Capybara, Tangu, Numbat — and their capabilities from the leaked registry." path="/revelations/models" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}

@@ -86,7 +86,9 @@ export default function Registry() {
   );
 
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Codename Registry" description="Searchable database of all discovered Claude model codenames with status, capabilities, and confidence ratings." path="/registry" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}

@@ -22,7 +22,9 @@ const queryLoopStages = [
 
 export default function Architecture() {
   return (
-    <div className="relative">
+    <PageTransition>
+      <SEOHead title="Architecture Deep-Dive" description="Complete boot sequence, query processing loop, tool execution pipeline, and context management from Claude Code's internals." path="/revelations/architecture" />
+      <div className="relative">
       <div className="fixed inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header */}
