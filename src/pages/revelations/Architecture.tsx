@@ -207,7 +207,7 @@ export default function Architecture() {
       {/* Tool System */}
       <section className="px-4 max-w-4xl mx-auto mb-16">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-6">
+          <h2 id="tool-system" className="text-2xl font-heading font-bold mb-6">
             <span className="text-primary text-glow-cyan">03.</span> The Tool System
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
