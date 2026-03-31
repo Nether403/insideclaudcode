@@ -261,7 +261,7 @@ export default function Architecture() {
       {/* Context Management */}
       <section className="px-4 max-w-4xl mx-auto mb-12">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <h2 className="text-2xl font-heading font-bold mb-4">
+          <h2 id="context-management" className="text-2xl font-heading font-bold mb-4">
             <span className="text-primary text-glow-cyan">04.</span> Context Management
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
