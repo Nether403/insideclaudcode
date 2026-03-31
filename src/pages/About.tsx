@@ -90,6 +90,54 @@ export default function About() {
             This site is an independent research project and is not affiliated with, endorsed by, or connected to Anthropic in any way. All analysis is based on publicly available information following the accidental publication. No proprietary secrets, credentials, or information that could compromise security is disclosed.
           </p>
         </motion.div>
+
+        {/* Created By */}
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-12">
+          <h2 className="text-xl font-heading font-semibold flex items-center gap-2 mb-4">
+            <Users className="h-5 w-5 text-primary" /> Created By
+          </h2>
+          <div className="p-6 rounded-lg border border-border/50 bg-card/30">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+              <div className="flex-1">
+                <h3 className="text-lg font-heading font-bold text-foreground">Martin vanDeursen</h3>
+                <p className="text-primary font-mono text-sm mt-1">Realm101</p>
+                <p className="text-muted-foreground text-sm mt-1">Amsterdam, Netherlands</p>
+
+                <a href="mailto:martin@realm101.com" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mt-4">
+                  <Mail className="h-4 w-4" /> martin@realm101.com
+                </a>
+
+                <div className="flex items-center gap-3 mt-4">
+                  <a href="https://www.linkedin.com/in/mvd101/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md border border-border/50 bg-card/20 hover:border-primary/50 hover:text-primary transition-colors text-muted-foreground">
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                  <a href="https://x.com/martinus62326" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md border border-border/50 bg-card/20 hover:border-primary/50 hover:text-primary transition-colors text-muted-foreground">
+                    <Twitter className="h-4 w-4" />
+                  </a>
+                  <a href="https://github.com/Nether403" target="_blank" rel="noopener noreferrer" className="p-2 rounded-md border border-border/50 bg-card/20 hover:border-primary/50 hover:text-primary transition-colors text-muted-foreground">
+                    <Github className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex-1">
+                <h4 className="text-sm font-heading font-semibold text-muted-foreground mb-3">Websites & Portfolio</h4>
+                <div className="space-y-2">
+                  {[
+                    { url: "https://nether101.nl", label: "nether101.nl" },
+                    { url: "https://Processoergosum.info", label: "Processoergosum.info" },
+                    { url: "https://Witnessprotocol.info", label: "Witnessprotocol.info" },
+                    { url: "https://Stackstudio.pro", label: "Stackstudio.pro" },
+                  ].map((site) => (
+                    <a key={site.url} href={site.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                      <Globe className="h-3.5 w-3.5 shrink-0" /> {site.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </PageTransition>
   );
