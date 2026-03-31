@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { TypingText } from "@/components/TypingText";
 import { CodeBlock } from "@/components/CodeBlock";
+import { LiveTerminal } from "@/components/LiveTerminal";
+import { MatrixRain } from "@/components/MatrixRain";
+import { GlowCard } from "@/components/GlowCard";
 import { Link } from "react-router-dom";
 import {
   FileCode, Layers, Wrench, Key, ArrowDown,
