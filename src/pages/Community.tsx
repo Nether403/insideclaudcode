@@ -219,5 +219,6 @@ The API layer uses tRPC with Zod schemas.`}</code>
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

@@ -210,5 +210,6 @@ export default function Glossary() {
         </motion.div>
       </div>
     </div>
+    </PageTransition>
   );
 }
