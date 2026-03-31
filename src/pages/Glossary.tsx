@@ -70,7 +70,9 @@ export default function Glossary() {
   }, [filtered]);
 
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <SEOHead title="Glossary" description="Technical glossary of Claude Code terms — model codenames, internal systems, features, and concepts." path="/glossary" />
+      <div className="min-h-screen">
       <div className="border-b border-border/50 bg-card/30">
         <div className="max-w-4xl mx-auto px-6 py-12">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
