@@ -10,3 +10,4 @@ Everything hidden beneath the surface — unreleased features, secret commands, 
 ## One Mistake
 
 Anthropic pushed unobfuscated source to npm. The AI industry's best-kept secrets went public in seconds... 
+C
